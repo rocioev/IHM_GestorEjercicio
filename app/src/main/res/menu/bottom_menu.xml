@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_24"
+        android:title="@string/btn_home" />
+
+    <item
+        android:id="@+id/navigation_rutinas"
+        android:icon="@drawable/ic_rutinas_24"
+        android:title="@string/btn_rutinas" />
+
+    <item
+        android:id="@+id/navigation_historial"
+        android:icon="@drawable/ic_historial_24"
+        android:title="@string/btn_historial" />
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/ic_perfil_circle_24"
+        android:title="@string/btn_perfil" />
+
+</menu>
