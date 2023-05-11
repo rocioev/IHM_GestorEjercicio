@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BodyBurn</string>
+
+    <!-- Página inicial -->
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="preg_registrarse">¿Aún no estas registrado?</string>
+
+    <!-- Otros -->
+    <string name="cerrar_sesion">Cerrar sesión</string>
+
+    <!-- Pantalla inicio -->
+    <string name="btn_registrarEntreno">Registrar entrenamiento</string>
+    <string name="unete_premium">¡Únete al plan premium!</string>
+
+    <!-- Barra de abajo -->
+    <string name="btn_home">Inicio</string>
+    <string name="btn_rutinas">Rutinas</string>
+    <string name="btn_historial">Historial</string>
+    <string name="btn_perfil">Perfil</string>
+    <string name="btn_pruebas">Pruebas</string>
+
+    <!-- Página iniciar sesión -->
+    <string name="siguiente">siguiente</string>
+    <string name="usuario">Usuario</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Contraseña</string>
+
+</resources>
