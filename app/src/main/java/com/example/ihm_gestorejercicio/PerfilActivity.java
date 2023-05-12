@@ -42,7 +42,6 @@ public class PerfilActivity extends AppCompatActivity {
         });
 
 
-
     }
 
     public void pasoMain (View v) {

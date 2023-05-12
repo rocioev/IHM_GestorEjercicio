@@ -8,6 +8,7 @@
 
     <!-- Otros -->
     <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="toolbar">@string/app_name</string>
 
     <!-- Pantalla inicio -->
     <string name="btn_registrarEntreno">Registrar entrenamiento</string>
