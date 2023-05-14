@@ -1,9 +1,18 @@
 package com.example.ihm_gestorejercicio;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.CalendarView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -13,6 +22,34 @@ public class HistorialActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historial);
+
+        //Llamar al método que gestiona la barra baja de navegación
+        setBottomNavigationView();
+        setToolBar();
+        setCalendario();
+
+    }
+
+    private void setCalendario() {
+
+        CalendarView calendarView = (CalendarView) findViewById(R.id.calendarView);
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(CalendarView v, int year, int month, int dayOfMonth) {
+                Intent intent = new Intent(v.getContext(), HistorialActivityDetalleDia.class);
+                startActivity(intent);
+                // setContentView(R.layout.activity_historial_detalle_dia);
+            }
+        });
+    }
+
+    private void setToolBar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Home");
+    }
+
+    private void setBottomNavigationView() {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.navigation_historial);
@@ -39,7 +76,7 @@ public class HistorialActivity extends AppCompatActivity {
             }
             return false;
         });
-    }
 
+    }
 
 }

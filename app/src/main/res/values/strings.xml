@@ -5,10 +5,17 @@
     <string name="iniciar_sesion">Iniciar sesión</string>
     <string name="registrarse">Registrarse</string>
     <string name="preg_registrarse">¿Aún no estas registrado?</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="entrar">Entrar con Email</string>
+    <string name="crear_cuenta">Crear cuenta con Email</string>
+    <string name="tos">Acepto los términos y condiciones del servicio y la politica de privacidad</string>
+    <string name="aceptar_publi">Me gustaria recibir información de las novedades de la aplicación</string>
 
     <!-- Otros -->
     <string name="cerrar_sesion">Cerrar sesión</string>
     <string name="toolbar">@string/app_name</string>
+    <string name="premium">Premium</string>
 
     <!-- Pantalla inicio -->
     <string name="btn_registrarEntreno">Registrar entrenamiento</string>
@@ -21,10 +28,17 @@
     <string name="btn_perfil">Perfil</string>
     <string name="btn_pruebas">Pruebas</string>
 
-    <!-- Página iniciar sesión -->
+    <!-- Página iniciar sesión y registrarse-->
     <string name="siguiente">siguiente</string>
     <string name="usuario">Usuario</string>
-    <string name="email">Email</string>
-    <string name="contraseña">Contraseña</string>
+
+
+    <!-- Página Historial-->
+    <string name="nom_ejercicio">Elev. Laterales</string>
+    <string name="nom_ejercicio1">Press Banca</string>
+    <string name="nom_ejercicio2">Ejercicio 2</string>
+    <string name="nom_ejercicio3">Ejercicio 3</string>
+    <string name="nom_ejercicio4">Ejercicio 4</string>
+
 
 </resources>
