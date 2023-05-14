@@ -21,11 +21,11 @@ public class Perfil extends AppCompatActivity {
         setBottomNavigationView();
 
 
-        Button botonConfig = findViewById(R.id.configuracion);
+        Button botonConfig = findViewById(R.id.cerrarSes);
         botonConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Perfil.this, Configuracion.class);
+                Intent intent = new Intent(Perfil.this, MainActivity.class);
                 startActivity(intent);
             }
         });
