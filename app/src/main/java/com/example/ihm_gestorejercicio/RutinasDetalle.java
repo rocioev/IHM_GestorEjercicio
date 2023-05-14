@@ -32,7 +32,7 @@ public class RutinasDetalle extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.nom_dia_rutina);
-        getSupportActionBar().setIcon(R.drawable.ic_arrow_back_24);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

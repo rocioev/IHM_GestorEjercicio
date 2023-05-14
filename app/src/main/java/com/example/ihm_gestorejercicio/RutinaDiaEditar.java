@@ -34,7 +34,7 @@ public class RutinaDiaEditar extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.nom_dia_rutina);
         getSupportActionBar().setSubtitle(R.string.rutina_editar_dia);
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24);
+        toolbar.setNavigationIcon(R.drawable.flechahaciaatras);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

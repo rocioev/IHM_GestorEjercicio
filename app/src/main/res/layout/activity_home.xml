@@ -27,6 +27,7 @@
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20sp"
+        android:onClick="pasoRegistrarEntreno"
         android:text="@string/btn_registrarEntreno" />
 
     <Button

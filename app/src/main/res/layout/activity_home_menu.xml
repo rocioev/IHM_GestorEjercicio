@@ -61,9 +61,15 @@
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="163dp">
 
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF6600"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="Home"/>
 
     </LinearLayout>
 

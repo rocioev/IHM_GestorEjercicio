@@ -29,7 +29,10 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(v.getContext(), chatPro.class);
         startActivity(intent);
     }
-
+    public void pasoPremium (View v) {
+        Intent intent = new Intent(v.getContext(), PremiumActivity.class);
+        startActivity(intent);
+    }
 
 
 

@@ -18,7 +18,7 @@ public class chatPro extends AppCompatActivity {
         flechaatras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(chatPro.this, Perfil.class);
+                Intent intent = new Intent(chatPro.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
