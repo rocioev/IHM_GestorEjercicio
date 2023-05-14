@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 public class RutinaDiaEditar extends AppCompatActivity {
 
@@ -17,6 +18,15 @@ public class RutinaDiaEditar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rutina_dia_editar);
         setToolBar();
+
+        ImageView masrutina = findViewById(R.id.masrutina);
+        masrutina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RutinaDiaEditar.this, RutinaEjercicioDetalle.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setToolBar() {
@@ -34,18 +44,4 @@ public class RutinaDiaEditar extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.search_menu, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.search) {
-            Intent intent = new Intent(RutinaDiaEditar.this, BuscarEjerciciosActivity.class);
-            startActivity(intent);
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

@@ -43,7 +43,7 @@ public class Perfil extends AppCompatActivity {
     private void setToolBar(){
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(R.string.btn_home);
+        getSupportActionBar().setTitle(R.string.btn_perfil);
 
     }
 
