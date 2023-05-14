@@ -14,8 +14,9 @@ public class CrearCuentaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_crear_cuenta);
     }
 
-    public void pasoHome (View v) {
-        Intent intent = new Intent(v.getContext(), HomeActivity.class);
+
+    public void pasoRegistroDatos (View v) {
+        Intent intent = new Intent(v.getContext(), RegistroDatos.class);
         startActivity(intent);
     }
 }

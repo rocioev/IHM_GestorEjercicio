@@ -139,7 +139,7 @@
                 android:layout_width="214dp"
                 android:layout_height="64dp"
                 android:backgroundTint="#FF6600"
-                android:onClick="pasoHome"
+                android:onClick="pasoRegistroDatos"
                 android:text="@string/crear_cuenta"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

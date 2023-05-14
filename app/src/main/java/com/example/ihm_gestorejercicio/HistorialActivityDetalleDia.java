@@ -1,13 +1,16 @@
 package com.example.ihm_gestorejercicio;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+
 import java.util.Calendar;
 
 public class HistorialActivityDetalleDia extends AppCompatActivity {
@@ -22,7 +25,29 @@ public class HistorialActivityDetalleDia extends AppCompatActivity {
         initDatePicker();
         dateButton = findViewById(R.id.datePickerButton);
         dateButton.setText(getTodaysDate());
+        setToolBar();
     }
+
+    private void setToolBar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.nom_dia_rutina);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HistorialActivityDetalleDia.this, RutinaDiaDetalle.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void pasoDetalleEj (View v) {
+        Intent intent = new Intent(HistorialActivityDetalleDia.this, RutinaEjercicioDetalle.class);
+        startActivity(intent);
+    }
+
+
 
     private String getTodaysDate()
     {

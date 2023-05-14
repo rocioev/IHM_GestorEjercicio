@@ -8,7 +8,6 @@
     android:layout_height="?attr/actionBarSize"
     android:layout_weight="1"
     android:background="?attr/colorPrimary"
-    android:elevation="4dp"
     android:minHeight="?attr/actionBarSize"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     app:navigationIcon="@drawable/ic_menu_24"

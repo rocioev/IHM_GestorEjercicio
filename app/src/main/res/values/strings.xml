@@ -16,6 +16,8 @@
     <string name="cerrar_sesion">Cerrar sesión</string>
     <string name="toolbar">@string/app_name</string>
     <string name="premium">Premium</string>
+    <string name="btn_chat">Chat Pro</string>
+    <string name="config">Configuración</string>
 
     <!-- Pantalla inicio -->
     <string name="btn_registrarEntreno">Registrar entrenamiento</string>
@@ -33,12 +35,25 @@
     <string name="usuario">Usuario</string>
 
 
-    <!-- Página Historial-->
+    <!-- Página Rutinas-->
     <string name="nom_ejercicio">Elev. Laterales</string>
     <string name="nom_ejercicio1">Press Banca</string>
-    <string name="nom_ejercicio2">Ejercicio 2</string>
-    <string name="nom_ejercicio3">Ejercicio 3</string>
-    <string name="nom_ejercicio4">Ejercicio 4</string>
+    <string name="nom_ejercicio2">Sentadilla</string>
+    <string name="nom_ejercicio3">Remo</string>
+    <string name="nom_ejercicio4">Peso muerto</string>
+    <string name="nom_dia_rutina">Empujes</string>
+    <string name="nom_rutina">Push pull leg</string>
+    <string name="rutina_editar_dia">Editar rutina</string>
+
+    <!-- Página Configuración-->
+    <string name="dto_inicio">Datos de inico de sesión</string>
+    <string name="notifs">Notificaciones</string>
+    <string name="idioma">Idioma</string>
+    <string name="sis_metrico">Sistema métrico</string>
+    <string name="acces">Accesibilidad</string>
+    <string name="dto_pago">Datos de pago</string>
+
+    <string name="empty"></string>
 
 
 </resources>

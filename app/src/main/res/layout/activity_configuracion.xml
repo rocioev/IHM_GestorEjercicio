@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configuracion">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#313133"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="163dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF6600"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="691dp"
+        android:layout_weight="1"
+        android:text="Opciones"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/config2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/perfilB"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="500dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/datosinic"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="437dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/notif"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="374dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/idiom"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="312dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/smetric"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="245dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/access"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="183dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/datosp"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#00FF6600"
+        android:contentDescription="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

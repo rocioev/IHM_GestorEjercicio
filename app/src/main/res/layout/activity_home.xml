@@ -15,9 +15,10 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
         android:layout_below="@id/toolbar"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/btn_resistrarEntreno"
@@ -25,18 +26,31 @@
         android:layout_height="91dp"
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
-        android:text="@string/btn_registrarEntreno"
-        />
+        android:layout_marginBottom="20sp"
+        android:text="@string/btn_registrarEntreno" />
 
     <Button
         android:id="@+id/btn_unetePremium"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:textAlignment="textStart"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
         android:layout_above="@id/bottomNavigation"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/boton_bordes"
         android:text="@string/unete_premium"
-        android:background="@drawable/boton_bordes"/>
+        android:textAlignment="textStart"
+        android:drawableEnd="@drawable/ic_star_24"/>
+
+    <Button
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_resistrarEntreno"
+        android:layout_centerHorizontal="true"
+        android:drawableEnd="@drawable/ic_chat_bubble_24"
+        android:drawablePadding="500sp"
+        android:onClick="pasoChat"
+        android:text="@string/btn_chat" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
@@ -48,38 +62,39 @@
         app:itemRippleColor="@android:color/transparent"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_menu" />
+    <!--
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="333dp"
+            android:layout_below="@+id/btn_resistrarEntreno"
+            android:layout_centerHorizontal="true">
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_below="@+id/btn_resistrarEntreno"
-        android:layout_centerHorizontal="true">
-        <!--
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/imageButton"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:contentDescription="TODO"
-                android:maxHeight="500dp"
-                android:scaleType="fitCenter"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:maxHeight="500dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/entrenamientoa" />
-        </LinearLayout>-->
-    </HorizontalScrollView>
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
+                    android:maxHeight="500dp"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="500dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/entrenamientoa" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    -->
 
 </RelativeLayout>

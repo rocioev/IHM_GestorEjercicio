@@ -1,11 +1,11 @@
 package com.example.ihm_gestorejercicio;
 
-import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -21,10 +21,24 @@ public class HomeActivity extends AppCompatActivity {
         setToolBar();
     }
 
+    public void pasoRegistrarEntreno (View v) {
+        Intent intent = new Intent(v.getContext(), RutinasDetalle.class);
+        startActivity(intent);
+    }
+
+    public void pasoChat (View v) {
+        Intent intent = new Intent(v.getContext(), chatPro.class);
+        startActivity(intent);
+    }
+
+
+
+
     private void setToolBar(){
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Home");
+        getSupportActionBar().setTitle(R.string.btn_home);
+
     }
 
     private void setBottomNavigationView() {
@@ -36,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     return true;
                 case R.id.navigation_rutinas:
-                    startActivity(new Intent(getApplicationContext(), RutinasActivity.class));
+                    startActivity(new Intent(getApplicationContext(), Rutinas.class));
 //                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();
                     return true;
@@ -46,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
                     finish();
                     return true;
                 case R.id.navigation_perfil:
-                    startActivity(new Intent(getApplicationContext(), PerfilActivity.class));
+                    startActivity(new Intent(getApplicationContext(), Perfil.class));
 //                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();
                     return true;
